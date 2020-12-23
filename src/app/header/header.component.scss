@@ -1,0 +1,130 @@
+.fondo-header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 170px;
+    left: 0;
+    top: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#header{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    .topnav{
+        padding: 8px 0 8px;
+        background-color: #333333;
+        color: #ffffff;
+    }
+    .header-container{
+        padding: 8px 0 8px;
+        .logo{
+            position: relative;
+            top: 18px;
+            a{
+                img{
+                    height: 70px;
+                }
+            }
+        }
+    }
+    .menu{
+        ul{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            top: 40px;
+            li{
+                margin-left: 15px;
+                display: inline;
+                a{
+                    color: #ffffff;
+                    font-size: 18px;
+                    text-decoration: none;
+                    &:hover{
+                        color: #D85E49;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.i-productos{
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    display: inline-block;
+    &:before{
+        content: "";
+        width: 32px;
+        height: 33px;
+        background-image: url(/assets/images/icons/icon-rollito.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+    }
+}
+.i-catalogo{
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    display: inline-block;
+    &:before{
+        content: "";
+        width: 32px;
+        height: 33px;
+        background-image: url(/assets/images/icons/icon-catalogo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: -4px;
+        left: 0px;
+    }
+}
+.i-about{
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    display: inline-block;
+    &:before{
+        content: "";
+        width: 32px;
+        height: 33px;
+        background-image: url(/assets/images/icons/icon-about.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: -7px;
+        left: 0px;
+    }
+}
+.i-contacto{
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    display: inline-block;
+    &:before{
+        content: "";
+        width: 32px;
+        height: 33px;
+        background-image: url(/assets/images/icons/icon-contacto.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: -4px;
+        left: 0px;
+    }
+}
