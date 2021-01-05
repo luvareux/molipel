@@ -2,19 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-product-card',
-  templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.scss']
+  selector: 'app-slideshow',
+  templateUrl: './slideshow.component.html',
+  styleUrls: ['./slideshow.component.scss']
 })
-export class ProductCardComponent implements OnInit {
+export class SlideshowComponent implements OnInit {
 
   constructor() { }
 
   customOptions: OwlOptions = {
     autoplay:true,
-    autoplayTimeout:8000,
     loop: true,
-    margin: 20,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
@@ -26,13 +24,13 @@ export class ProductCardComponent implements OnInit {
         items: 1
       },
       400: {
-        items: 2
+        items: 1
       },
       740: {
-        items: 3
+        items: 1
       },
       940: {
-        items: 3
+        items: 1
       }
     },
     nav: true

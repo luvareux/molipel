@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProductCardComponent } from './product-card/product-card.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
