@@ -8,8 +8,8 @@
   
   .owl-carousel .owl-prev.disabled,
   .owl-carousel .owl-next.disabled{
-  pointer-events: none;
-  opacity: 0.2;
+    pointer-events: none;
+    opacity: 0.2;
   }
   
   .owl-carousel .prev-slide{
@@ -21,8 +21,28 @@
     right: -33px;
   }
   .owl-carousel .prev-slide:hover{
-   background-position: 0px -53px;
+    background-position: 0px -53px;
   }
   .owl-carousel .next-slide:hover{
-  background-position: -24px -53px;
-  }   
+    background-position: -24px -53px;
+  } 
+  .s-bg-01{
+    color: #ffffff;
+    background: rgb(6,162,194);
+    background: linear-gradient(90deg, rgba(6,162,194,1) 0%, rgba(10,179,213,1) 35%, rgba(94,203,225,1) 100%);
+    h3{
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      text-shadow: 1px 2px 0px #06a2c2;
+      margin-bottom: 30px;
+    }
+    p{
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      margin: 0;
+      text-shadow: 1px 2px 0px #06a2c2;
+    }
+  }  
