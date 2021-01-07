@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { GaleriaEmpresaComponent } from './galeria-empresa/galeria-empresa.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     HeaderComponent,
     FooterComponent,
     ProductCardComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    GaleriaEmpresaComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
