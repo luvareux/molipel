@@ -69,3 +69,31 @@
   .s-tabs{
     background-color: #eeeeee;
   }
+  section.contacto  {
+    ul{
+      margin: 0;
+      padding: 0;
+      display: block;
+      li{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #9C9C9C;
+        margin: 0 0 13px;
+        padding: 0;
+        list-style: none;
+        a{
+          color: #9C9C9C;
+          font-size: 18px;
+          i{
+            color: #06A2C2;
+            font-size: 24px;
+          }
+          &:hover{
+            color: #06A2C2;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+   
+}

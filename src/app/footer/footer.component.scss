@@ -1,0 +1,31 @@
+#footer{
+    background-color: #444444;
+    position: relative;
+    text-align: center;
+    p{
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        a{
+            color: #06A2C2;
+        }
+    }
+    &:before{
+        content: "";
+        width: 50%;
+        height: 4px;
+        background-color: #06A2C2;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    &:after{
+        content: "";
+        width: 50%;
+        height: 4px;
+        background-color: #D85E49;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+}
