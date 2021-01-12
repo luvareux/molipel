@@ -1,0 +1,66 @@
+#relacionados{
+    position: relative;
+    figure{
+        height: 290px;
+        overflow: hidden;
+        margin: 0;
+    }
+    div{
+        height: 90px;
+        background-color: #5ECBE1;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        &::before{
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: #06A2C2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &::after{
+            content: "";
+            width: 50%;
+            height: 4px;
+            background-color: #D85E49;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h4{
+            color: #fff;
+            font-size: 22px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            text-shadow: 1px 2px 0px #06a2c2;
+        }
+    }
+}
+::ng-deep #relacionados ::ng-deep .owl-prev {
+    background-color: transparent !important;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+::ng-deep #relacionados ::ng-deep .owl-next {
+    background-color: transparent !important;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}

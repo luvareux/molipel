@@ -12,6 +12,9 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { GaleriaEmpresaComponent } from './galeria-empresa/galeria-empresa.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { ProductoComponent } from './producto/producto.component';
+import { RelacionadosComponent } from './relacionados/relacionados.component';
+import { ProductosComponent } from './productos/productos.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { TabsComponent } from './tabs/tabs.component';
     ProductCardComponent,
     SlideshowComponent,
     GaleriaEmpresaComponent,
-    TabsComponent
+    TabsComponent,
+    ProductoComponent,
+    RelacionadosComponent,
+    ProductosComponent
   ],
   imports: [
     BrowserModule,
