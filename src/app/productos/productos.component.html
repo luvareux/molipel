@@ -14,46 +14,17 @@
             </div>
         </div>
 
-        <div class="col-md-4 p-2">
-            <a [routerLink]="['/producto']" class="productos">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
+        <div class="col-md-4 p-2" *ngFor="let producto of productos">
+            <a [routerLink]="['producto',producto.id]" class="productos">
+                <figure><img src="/assets/productos/{{producto.imagen}}" class="d-block w-100"></figure>
                 <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
+                    <h4>{{producto.titulo}}</h4>
                 </div>
             </a>
         </div><!-- /col -->
-        <div class="col-md-4 p-2">
-            <a [routerLink]="['/producto']" class="productos">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
-                </div>
-            </a>
-        </div><!-- /col -->
-        <div class="col-md-4 p-2">
-            <a [routerLink]="['/producto']" class="productos">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
-                </div>
-            </a>
-        </div><!-- /col -->
-        <div class="col-md-4 p-2">
-            <a [routerLink]="['/producto']" class="productos">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
-                </div>
-            </a>
-        </div><!-- /col -->
-        <div class="col-md-4 p-2">
-            <a [routerLink]="['/producto']" class="productos">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
-                </div>
-            </a>
-        </div><!-- /col -->
+       
+       
+
 
     </div><!-- /row -->
 </div>

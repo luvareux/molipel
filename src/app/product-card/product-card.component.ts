@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
+//SERVICES 
+import { ProductosService, ProductosRules } from '../services/productos.service';
+
 @Component({
   selector: 'app-product-card',
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit {
+  
+  productos:ProductosRules[] =[];
 
-  constructor() { }
+  constructor(private _productos:ProductosService) { }
 
   customOptions: OwlOptions = {
     autoplay:true,
@@ -39,6 +44,7 @@ export class ProductCardComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.productos = this._productos.getProductos();
   }
 
 }

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ActivatedRoute } from "@angular/router";
+
+// SERVICES
+import {ProductosService} from "../services/productos.service"
 
 @Component({
   selector: 'app-producto',
@@ -8,7 +12,13 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ProductoComponent implements OnInit {
 
-  constructor() { }
+  producto:any[] = [];
+
+  constructor(private ParamsRouter:ActivatedRoute, private productoService:ProductosService ) { 
+    this.ParamsRouter.params.subscribe(params=>{
+      this.producto = this.productoService.getProducto(params['id']);
+    });
+  }
 
   customOptions: OwlOptions = {
     autoplay:true,

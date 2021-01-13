@@ -1,29 +1,14 @@
 <div class="container mt-5" id="producto">
         <div class="row pt-5">
             <div class="col-md-6">
+    
+                <figure><img src="/assets/productos/{{producto[0].imagen}}" class="d-block w-100" title="{{producto[0].titulo}}" alt="{{producto[0].titulo}}"></figure>
 
-                <owl-carousel-o [options]="customOptions" id="producto-gallery">
-                    <ng-container>
-
-                        <ng-template carouselSlide>
-                                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
-                        </ng-template>
-                
-                        <ng-template carouselSlide> 
-                                <figure><img src="/assets/productos/ph-48-rollos-x-80-mts.png" class="d-block w-100"></figure>
-                        </ng-template>
-
-                    </ng-container>
-                </owl-carousel-o>
 
             </div><!-- /col -->
             <div class="col-md-6">
-                <h4 class>Papel  higiénico 30 rollos x 80 mts</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris a nunc non lorem vestibulum efficitur lobortis ut .
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris a nunc non lorem vestibulum efficitur lobortis ut .
+                <h4 class>{{producto[0].titulo}}</h4>
+                <p>{{producto[0].descripcion}}
                 </p>
                 <a href="//api.whatsapp.com/send?phone=541160418667&text=Hola,%20Me%20contacto%20para%20la%20solicitar%20este%20producto" class="text-center d-block mt-5" target="_blank">
                     <button class="btn btn-custom px-5 py-2 my-4">
