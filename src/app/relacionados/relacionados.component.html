@@ -1,41 +1,12 @@
 <owl-carousel-o [options]="customOptions" id="relacionados">
-    <ng-container>
-
+    <ng-container *ngFor="let producto of productos">
         <ng-template carouselSlide>
-            <a [routerLink]="['/producto']">
-                <figure><img src="/assets/productos/ph-48-rollos-x-30-mts.png" class="d-block w-100"></figure>
+            <a [routerLink]="['/producto',producto.id]">
+                <figure><img src="/assets/productos/{{producto.imagen}}" class="d-block w-100" title="{{producto.titulo}}" alt="{{producto.titulo}}"></figure>
                 <div>
-                    <h4>Papel higiénico 48 rollos x 30 mts</h4>
+                    <h4>{{producto.titulo}}</h4>
                 </div>
             </a>
         </ng-template>
-
-        <ng-template carouselSlide>
-            <a [routerLink]="['/producto']">  
-                <figure><img src="/assets/productos/ph-48-rollos-x-80-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 30 rollos x 80 mts</h4>
-                </div>
-            </a>
-        </ng-template>
-
-        <ng-template carouselSlide>
-            <a [routerLink]="['/producto']">
-                <figure><img src="/assets/productos/t-2x400-mts-20cm-doble-hoja.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Toalla 2 x 400 mts 20 cm doble hoja</h4>
-                </div>
-            </a>
-        </ng-template>
-
-        <ng-template carouselSlide>
-            <a [routerLink]="['/producto']">
-                <figure><img src="/assets/productos/ph-48-rollos-x-80-mts.png" class="d-block w-100"></figure>
-                <div>
-                    <h4>Papel higiénico 30 rollos x 80 mts</h4>
-                </div>
-            </a>
-        </ng-template>
-          
     </ng-container>
 </owl-carousel-o>

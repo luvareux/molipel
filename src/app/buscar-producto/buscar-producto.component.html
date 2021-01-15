@@ -1,6 +1,6 @@
 <div class="container my-5 pt-4">
     <div class="title mb-5 text-center">
-        <h3>Conocé Todos Nuestros Productos</h3>
+        <h3>Resultado de Busqueda</h3>
         <span></span>
     </div>
 
@@ -9,18 +9,21 @@
             <app-campo-buscador></app-campo-buscador>
         </div>
 
-        <div class="col-md-4 p-2" *ngFor="let producto of productos">
+        <div class="no-result w-100" *ngIf="producto.length == 0">
+            <h4>Oops!</h4>
+            <p class="mb-0">No se encontraron productos :(</p>
+        </div>
+
+        <div class="col-md-4 p-2" *ngFor="let producto of producto">
             <a [routerLink]="['/producto',producto.id]" class="productos">
                 <figure><img src="/assets/productos/{{producto.imagen}}" class="d-block w-100"></figure>
                 <div>
                     <h4>{{producto.titulo}}</h4>
                 </div>
             </a>
-        </div><!-- /col -->
+        </div>
         
-       
-       
-
 
     </div><!-- /row -->
 </div>
+

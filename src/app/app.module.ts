@@ -18,6 +18,8 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ProductoComponent } from './producto/producto.component';
 import { RelacionadosComponent } from './relacionados/relacionados.component';
 import { ProductosComponent } from './productos/productos.component';
+import { BuscarProductoComponent } from './buscar-producto/buscar-producto.component';
+import { CampoBuscadorComponent } from './campo-buscador/campo-buscador.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { ProductosComponent } from './productos/productos.component';
     TabsComponent,
     ProductoComponent,
     RelacionadosComponent,
-    ProductosComponent
+    ProductosComponent,
+    BuscarProductoComponent,
+    CampoBuscadorComponent
   ],
   imports: [
     BrowserModule,
