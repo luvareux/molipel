@@ -1,18 +1,54 @@
 <div class="container mt-5" id="producto">
-        <div class="row pt-5">
-            <div class="col-md-6">
+        <div class="row pt-5 justify-content-between">
+            <div class="col-md-5">
     
                 <figure><img src="/assets/productos/{{producto[0].imagen}}" class="d-block w-100" title="{{producto[0].titulo}}" alt="{{producto[0].titulo}}"></figure>
 
 
             </div><!-- /col -->
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <h4 class>{{producto[0].titulo}}</h4>
-                <p>{{producto[0].descripcion}}
-                </p>
-                <a href="//api.whatsapp.com/send?phone=541166687813&text=Hola,%20Me%20contacto%20via%20web%20para%20la%20solicitar%20{{producto[0].titulo}}" class="text-center d-block mt-5" target="_blank">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <p>Código: <b>{{producto[0].codigo}}</b></p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a class="download" href="/assets/uploads/{{producto[0].infoTec}}.pdf" target="_blank"> Descargar información ténica</a>
+                    </div>
+                </div>
+
+            <div class="details-table">
+
+                <div class="item" *ngIf="producto[0].medidas">
+                    <div class="item-spec">
+                        Medidas
+                    </div>
+                    <div class="item-divider"></div>
+                    <div class="item-atr">{{producto[0].medidas}}</div>
+                </div>
+
+
+                <div class="item" *ngIf="producto[0].cantidad">
+                    <div class="item-spec">
+                        Cantidad por pallet
+                    </div>
+                    <div class="item-divider"></div>
+                    <div class="item-atr">{{producto[0].cantidad}}</div>
+                </div>
+
+                <div class="item" *ngIf="producto[0].bolson">
+                    <div class="item-spec">
+                        Bolsón desnudo
+                    </div>
+                    <div class="item-divider"></div>
+                    <div class="item-atr">{{producto[0].bolson}}</div>
+                </div>
+
+            </div>
+
+                <a href="//api.whatsapp.com/send?phone=541166687813&text=Hola,%20Me%20contacto%20via%20web%20para%20la%20solicitar%20{{producto[0].titulo}}" class="text-right d-block mt-5" target="_blank">
                     <button class="btn btn-custom px-5 py-2 my-4">
-                            QUIERO ESTE PRODUCTO
+                            CONSULTAR
                     </button>
                 </a>
             </div>

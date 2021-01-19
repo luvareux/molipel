@@ -3,10 +3,69 @@
         font-family: "Roboto", sans-serif;
         color: #06A2C2;
         font-size: 32px;
+        font-weight: 400;
     }
     p{
         font-family: "Roboto", sans-serif;
         color: #555555;
-        font-size: 18px; 
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        b{
+          color: #D85E49;  
+        } 
     }
+    a.download{
+        color: #06A2C2;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        position: relative;
+        &:before{
+          content: "\f1c1"; 
+          font-family: 'Line Awesome Free';
+          font-weight: 900;
+          position: absolute;
+          left: -25px;
+          top: -9px;
+          font-size: 24px;
+        }
+    }
+}
+.details-table {
+    margin-top: 1rem;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.details-table .item {
+    float: left;
+    width: 100%;
+    border-bottom: 1px dashed #cfd1d5;
+    border-top: 1px dashed #cfd1d5;
+    position: relative;
+    padding: 0 1rem;
+}
+.details-table .item:nth-child(odd) {
+    background: #eaeaea;
+}
+.details-table .item-spec {
+    width: 40%;
+    float: left;
+    padding: 1rem 15px 1rem 0;
+    position: relative;
+}
+.details-table .item-divider {
+    height: 100%;
+    width: 0;
+    border-right: 1px dashed #cfd1d5;
+    position: absolute;
+    left: 40%;
+}
+.details-table .item-atr {
+    width: 60%;
+    float: left;
+    padding: 1rem 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #06A2C2;
 }

@@ -4,7 +4,11 @@ export interface ProductosRules{
   id:number;
   imagen:string;
   titulo:string;
-  descripcion:string;
+  codigo:number;
+  medidas:string;
+  cantidad:number;
+  bolson:string;
+  infoTec:string;
   categoria:string;
 }
 
@@ -17,30 +21,13 @@ export class ProductosService {
     {
       "id":0,
       "imagen":"ph-48-rollos-x-30-mts.png",
-      "titulo":"test",
-      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a nunc non lorem vestibulum efficitur lobortis ut",
-      "categoria":"toallas"
-    },
-    {
-      "id":1,
-      "imagen":"t-2x400-mts-20cm-doble-hoja.png",
-      "titulo":"Papel higiénico 48 rollos x 30 mts",
-      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a nunc non lorem vestibulum efficitur lobortis ut",
-      "categoria":"papel higiénico"
-    },
-    {
-      "id":2,
-      "imagen":"t-2x400-mts-20cm-doble-hoja.png",
-      "titulo":"test 2",
-      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a nunc non lorem vestibulum efficitur lobortis ut",
-      "categoria":"papel higiénico"
-    },
-    {
-      "id":3,
-      "imagen":"t-2x400-mts-20cm-doble-hoja.png",
-      "titulo":"test 3",
-      "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a nunc non lorem vestibulum efficitur lobortis ut",
-      "categoria":"papel higiénico"
+      "titulo":"Papel Higiénico 48 rollos x 30 mts",
+      "codigo":821923,
+      "medidas":"665mm x 265mm x 415mm",
+      "cantidad":50,
+      "bolson":"Si",
+      "infoTec":"Papel-Higiénico-48-rollos-x-30-mts",
+      "categoria":"Papel Higiénico"
     }
   ];
 
