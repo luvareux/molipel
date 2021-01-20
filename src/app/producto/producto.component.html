@@ -1,12 +1,10 @@
 <div class="container mt-5" id="producto">
-        <div class="row pt-5 justify-content-between">
-            <div class="col-md-5">
-    
-                <figure><img src="/assets/productos/{{producto[0].imagen}}" class="d-block w-100" title="{{producto[0].titulo}}" alt="{{producto[0].titulo}}"></figure>
-
-
+        <div class="row justify-content-between">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+               <!--  <figure><img src="/assets/productos/{{producto[0].imagen}}" class="d-block w-100" title="{{producto[0].titulo}}" alt="{{producto[0].titulo}}"></figure> -->
+                <figure style="background-image:url(/assets/productos/{{producto[0].imagen}})"></figure>
             </div><!-- /col -->
-            <div class="col-md-7">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
                 <h4 class>{{producto[0].titulo}}</h4>
                 <div class="row mt-4">
                     <div class="col-md-6">

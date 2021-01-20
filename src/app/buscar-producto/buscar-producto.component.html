@@ -16,7 +16,7 @@
 
         <div class="col-md-4 p-2" *ngFor="let producto of producto">
             <a [routerLink]="['/producto',producto.id]" class="productos">
-                <figure><img src="/assets/productos/{{producto.imagen}}" class="d-block w-100"></figure>
+                <figure style="background-image:url(/assets/productos/{{producto.imagen}})"></figure>
                 <div>
                     <h4>{{producto.titulo}}</h4>
                 </div>

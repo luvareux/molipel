@@ -8,6 +8,9 @@
     vertical-align: middle;
     overflow: hidden;
     z-index: 999;
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 .topnav ul li:nth-child(2){
    border-left: 1px solid #565656;
@@ -24,10 +27,19 @@
     width: 100%;
     z-index: 999;
     background-color: transparent;
+    @media only screen and (max-width: 768px) {
+        background-color: #06A2C2;
+        position: relative;
+    }
     .topnav{
         padding: 8px 0 8px;
         background-color: #444444;
         color: #ffffff;
+        @media only screen and (max-width: 411px) {
+            .text-right{
+                text-align: center !important;
+            }
+        }
         ul{
             margin: 0;
             padding: 0;
@@ -37,9 +49,13 @@
                 margin-left: 15px;
                 a{
                     color: #ffffff;
+                    font-size: 12px;
                     i{
                         color: #06A2C2;
                         font-size: 20px;
+                        @media only screen and (max-width: 411px) {
+                            display: none;
+                        }
                     }
                     &:hover{
                         color: #eee;
@@ -51,12 +67,27 @@
     }
     .header-container{
         padding: 8px 0 8px;
+        position: relative;
+        .icon-mm{
+            color: #ffffff;
+            font-size: 38px;
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+        }
         .logo{
             position: relative;
             top: 18px;
+            @media only screen and (max-width: 768px) {
+                top: 1px;
+            }
             a{
                 img{
                     height: 70px;
+                    @media only screen and (max-width: 768px) {
+                        height: 50px;
+                    }
                 }
             }
         }
@@ -67,6 +98,9 @@
             margin: 0;
             position: relative;
             top: 40px;
+            @media only screen and (max-width: 768px) {
+               top: 15px;
+            }
             li{
                 margin-left: 20px;
                 display: inline;
@@ -74,6 +108,9 @@
                     color: #ffffff;
                     font-size: 18px;
                     text-decoration: none;
+                    @media only screen and (max-width: 768px) {
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: #D85E49;
                         text-decoration: none;
@@ -157,5 +194,28 @@
         position: absolute;
         top: -4px;
         left: 0px;
+    }
+}
+.content-header{
+    @media only screen and (max-width: 411px) {
+        width: 50% !important;
+    }
+}
+.menuMobile{
+    position: relative;
+    ul{
+        background-color:transparent;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left !important;
+        list-style: none;
+        li{
+            padding: 8px 0 8px;
+            border-top: 1px solid #ccc;
+            a{
+                color: #ffffff;
+            }
+        }
     }
 }

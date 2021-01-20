@@ -5,6 +5,12 @@ html{
 a{
     text-decoration: none !important;
 }
+div#main {
+    padding-top: 130px;
+    @media only screen and (max-width: 768px) {
+        padding-top: 0;
+    }
+}
 .title{
     font-family: "Roboto", sans-serif;
     color: #06A2C2;
